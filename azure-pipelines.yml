@@ -27,7 +27,8 @@ steps:
   inputs:
     command: 'build'
     workingDirectory: '$(System.DefaultWorkingDirectory)'
-- task: Go@0
+- - task: Go@0
   inputs:
-    command: 'build'
+    command: 'test'
+    arguments: '-v'
     workingDirectory: '$(System.DefaultWorkingDirectory)'
