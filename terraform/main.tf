@@ -32,7 +32,7 @@ resource "azurerm_service_plan" "appserviceplan" {
   os_type             = "Linux"
   sku_name            = "B1"
 }
-
+ 
 # Create the web app, pass in the App Service Plan ID
 resource "azurerm_linux_web_app" "webapp" {
   name                  = "azwebapp-${random_integer.ri.result}"
