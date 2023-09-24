@@ -45,7 +45,7 @@ jobs:
     inputs:
       repository: $(imageName)
       command: build
-      Dockerfile: Docker/Dockerfile
+      Dockerfile: docker/Dockerfile
 
 #displayName: "login to Docker Hub"
 #inputs:
