@@ -1,6 +1,9 @@
 trigger: 
  - main
 
+variables:
+   imageName: 'pipelines-azwebapp-docker'
+
 jobs:
 - job: Build_AzWebApp
 
@@ -36,8 +39,6 @@ jobs:
       arguments: '-v'
       workingDirectory: '$(System.DefaultWorkingDirectory)'
 
-variables:
-   imageName: 'pipelines-azwebapp-docker'
 
 - task: "Docker@2"
 displayName: Build an image
