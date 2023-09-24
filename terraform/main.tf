@@ -47,7 +47,7 @@ resource "azurerm_linux_web_app" "webapp" {
     
     application_stack {
       docker_image     = "fz96tw/azwebapp"
-      docker_image_tag = "Dockerfile"
+      docker_image_tag = "latest"
       #docker_registry_url   = "https://index.docker.io"
  #     docker_registry_username = "fz96tw"
  #     docker_registry_password = "florida1"
