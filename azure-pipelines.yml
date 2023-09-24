@@ -40,7 +40,7 @@ jobs:
       workingDirectory: '$(System.DefaultWorkingDirectory)'
 
 
-- task: "Docker@2"
+- task: Docker@2
   displayName: Build an image
   input:
     repository: $(imageName)
