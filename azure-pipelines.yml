@@ -1,6 +1,9 @@
 trigger: 
  - main
 
+jobs:
+- job Build AzWebApp
+
 pool:
    vmImage: 'ubuntu-latest'
 
