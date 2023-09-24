@@ -32,6 +32,7 @@ jobs:
   - task: Go@0
     inputs:
       command: 'build'
+      arguments: '-o myazwebapp_linux_amd64'
       workingDirectory: '$(System.DefaultWorkingDirectory)'
   - task: Go@0
     inputs:
